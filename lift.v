@@ -31,7 +31,7 @@ if(req_floor < cf )
 begin
 cf=cf-1;
 door=1'd0;
-stop=5'd0;
+stop=1'd0;
 Up=1'd0;
 Down=1'd1;
 end
@@ -41,7 +41,7 @@ else if (req_floor > cf)
 begin
 cf = cf+1;
 door=1'd0;
-stop=5'd0;
+stop=1'd0;
 Up=1'd1;
 Down=1'd0;
 end
@@ -50,7 +50,7 @@ else if(req_floor == cf )
 begin
 cf = req_floor;
 door=1'd1;
-stop=5'd1;
+stop=1'd1;
 Up=1'd0;
 Down=1'd0;
 end
